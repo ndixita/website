@@ -25,7 +25,7 @@ When a Pod-level resize is initiated, the Kubelet treats the change as a resize 
 
 > **Note:** Currently, `resizePolicy` is not supported at the Pod level. The Kubelet always defers to individual container settings to decide if an update can be applied in-place or requires a restart.
 
-## Example: ccaling a shared resource pool
+## Example: Scaling a shared resource pool
 
 In this scenario, a Pod is defined with a 2 CPU pod-level limit. Because the individual containers do not have their own limits defined, they share this total pool.
 
